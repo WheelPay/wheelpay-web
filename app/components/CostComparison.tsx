@@ -29,11 +29,11 @@ const rows: Row[] = [
     yearlyTotal: "$7,428",
   },
   {
-    name: "PushPress (Free)",
-    fee: "$0 / mo",
-    processing: "4.99% + $0.30",
-    monthlyTotal: "$998",
-    yearlyTotal: "$11,976",
+    name: "Gymdesk",
+    fee: "$75–$200 / mo",
+    processing: "~2.9% + $0.30",
+    monthlyTotal: "$655–$780",
+    yearlyTotal: "$7,860–$9,360",
   },
   {
     name: "PushPress (Pro)",
@@ -43,12 +43,14 @@ const rows: Row[] = [
     yearlyTotal: "$8,844",
   },
   {
-    name: "Gymdesk",
-    fee: "$75–$200 / mo",
-    processing: "~2.9% + $0.30",
-    monthlyTotal: "$655–$780",
-    yearlyTotal: "$7,860–$9,360",
+    name: "PushPress (Free)",
+    fee: "$0 / mo",
+    processing: "4.99% + $0.30",
+    monthlyTotal: "$998",
+    yearlyTotal: "$11,976",
   },
+  // Below: processing rate undisclosed. Fee-only totals shown — real cost
+  // is higher and understated relative to the fully-priced rows above.
   {
     name: "Zen Planner",
     fee: "$99–$348 / mo",
