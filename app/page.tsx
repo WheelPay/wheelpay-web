@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
+import CostComparison from "./components/CostComparison";
 import HowItWorks from "./components/HowItWorks";
 import Benefits from "./components/Benefits";
 import BuiltFor from "./components/BuiltFor";
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <Hero />
       <Stats />
+      <CostComparison />
       <HowItWorks />
       <Benefits />
       <BuiltFor />

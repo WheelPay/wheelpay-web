@@ -20,6 +20,7 @@ export default function Footer() {
             <p className="text-xs uppercase tracking-widest text-mist mb-4">Navigate</p>
             <ul className="space-y-2 text-sm">
               {[
+                ["Compare", "/#compare"],
                 ["How It Works", "/#how-it-works"],
                 ["Benefits", "/#benefits"],
                 ["Built For", "/#built-for"],
