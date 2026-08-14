@@ -49,6 +49,27 @@ const rows: Row[] = [
     monthlyTotal: "$655–$780",
     yearlyTotal: "$7,860–$9,360",
   },
+  {
+    name: "Zen Planner",
+    fee: "$99–$348 / mo",
+    processing: "Hidden — quoted per customer",
+    monthlyTotal: "$99–$348†",
+    yearlyTotal: "$1,188–$4,176†",
+  },
+  {
+    name: "Glofox",
+    fee: "$99+ / mo",
+    processing: "Hidden — sales-gated",
+    monthlyTotal: "$99+†",
+    yearlyTotal: "$1,188+†",
+  },
+  {
+    name: "StreamFit",
+    fee: "$175 / mo",
+    processing: "Unknown — not disclosed",
+    monthlyTotal: "$175†",
+    yearlyTotal: "$2,100†",
+  },
 ];
 
 export default function CostComparison() {
@@ -134,10 +155,18 @@ export default function CostComparison() {
           processing rates apply to recurring membership dues the same as
           any other card transaction — providers differentiate pricing by
           payment method (card vs. ACH/bank transfer), not by transaction
-          type, per each provider&rsquo;s own help documentation. Sources:
-          wodify.com/pricing, pushpress.com/pricing, gymdesk.com/pricing.
-          WheelPay&rsquo;s $0 owner-side processing reflects its flat,
-          member-paid transaction fee structure.
+          type, per each provider&rsquo;s own help documentation. &dagger;Zen
+          Planner, Glofox, and StreamFit do not publicly disclose their card
+          processing rate — &ldquo;Hidden&rdquo; means it&rsquo;s quoted only
+          through a sales call or account setup; &ldquo;Unknown&rdquo; means
+          no rate or processor is disclosed anywhere at all. Totals marked
+          with &dagger; reflect the monthly fee only and understate the true
+          cost once processing is included. Sources: wodify.com/pricing,
+          pushpress.com/pricing, gymdesk.com/pricing, glofox.com/pricing,
+          streamfit.com/streamfit-pricing; Zen Planner&rsquo;s fee is
+          third-party-reported (its own pricing page could not be verified
+          directly). WheelPay&rsquo;s $0 owner-side processing reflects its
+          flat, member-paid transaction fee structure.
         </p>
       </div>
     </section>
