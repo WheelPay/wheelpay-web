@@ -21,6 +21,30 @@ const rows: Row[] = [
     monthlyTotal: "$0",
     yearlyTotal: "$0",
   },
+  // Sorted ascending by Yearly Total (using the low end of any range).
+  // Zen Planner/Glofox/StreamFit show a fee-only total (see †) — their
+  // real cost is higher once undisclosed processing is factored in.
+  {
+    name: "Zen Planner",
+    fee: "$99–$348 / mo",
+    processing: "Hidden — quoted per customer",
+    monthlyTotal: "$99–$348†",
+    yearlyTotal: "$1,188–$4,176†",
+  },
+  {
+    name: "Glofox",
+    fee: "$99+ / mo",
+    processing: "Hidden — sales-gated",
+    monthlyTotal: "$99+†",
+    yearlyTotal: "$1,188+†",
+  },
+  {
+    name: "StreamFit",
+    fee: "$175 / mo",
+    processing: "Unknown — not disclosed",
+    monthlyTotal: "$175†",
+    yearlyTotal: "$2,100†",
+  },
   {
     name: "Wodify (Essentials)",
     fee: "$99 / mo",
@@ -48,29 +72,6 @@ const rows: Row[] = [
     processing: "4.99% + $0.30",
     monthlyTotal: "$998",
     yearlyTotal: "$11,976",
-  },
-  // Below: processing rate undisclosed. Fee-only totals shown — real cost
-  // is higher and understated relative to the fully-priced rows above.
-  {
-    name: "Zen Planner",
-    fee: "$99–$348 / mo",
-    processing: "Hidden — quoted per customer",
-    monthlyTotal: "$99–$348†",
-    yearlyTotal: "$1,188–$4,176†",
-  },
-  {
-    name: "Glofox",
-    fee: "$99+ / mo",
-    processing: "Hidden — sales-gated",
-    monthlyTotal: "$99+†",
-    yearlyTotal: "$1,188+†",
-  },
-  {
-    name: "StreamFit",
-    fee: "$175 / mo",
-    processing: "Unknown — not disclosed",
-    monthlyTotal: "$175†",
-    yearlyTotal: "$2,100†",
   },
 ];
 
