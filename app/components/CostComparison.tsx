@@ -130,7 +130,11 @@ export default function CostComparison() {
           provider&rsquo;s publicly published rates as of August 2026 and is
           subject to change — confirm current pricing directly with each
           provider. Wodify&rsquo;s processing rate is advertised as
-          &ldquo;as low as&rdquo; and may vary by account. Sources:
+          &ldquo;as low as&rdquo; and may vary by account. Published card
+          processing rates apply to recurring membership dues the same as
+          any other card transaction — providers differentiate pricing by
+          payment method (card vs. ACH/bank transfer), not by transaction
+          type, per each provider&rsquo;s own help documentation. Sources:
           wodify.com/pricing, pushpress.com/pricing, gymdesk.com/pricing.
           WheelPay&rsquo;s $0 owner-side processing reflects its flat,
           member-paid transaction fee structure.
