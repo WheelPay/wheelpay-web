@@ -11,7 +11,7 @@ interface Row {
   yearlyTotal: string;
 }
 
-// Illustrative totals assume $10,000/mo in member card payments — see footnote.
+// Illustrative totals assume $20,000/mo in member card payments — see footnote.
 const rows: Row[] = [
   {
     name: "WheelPay",
@@ -25,29 +25,29 @@ const rows: Row[] = [
     name: "Wodify (Essentials)",
     fee: "$99 / mo",
     processing: "as low as 2.6% + $0.25",
-    monthlyTotal: "$359",
-    yearlyTotal: "$4,308",
+    monthlyTotal: "$619",
+    yearlyTotal: "$7,428",
   },
   {
     name: "PushPress (Free)",
     fee: "$0 / mo",
     processing: "4.99% + $0.30",
-    monthlyTotal: "$499",
-    yearlyTotal: "$5,988",
+    monthlyTotal: "$998",
+    yearlyTotal: "$11,976",
   },
   {
     name: "PushPress (Pro)",
     fee: "$159 / mo",
     processing: "2.89% + $0.30",
-    monthlyTotal: "$448",
-    yearlyTotal: "$5,376",
+    monthlyTotal: "$737",
+    yearlyTotal: "$8,844",
   },
   {
     name: "Gymdesk",
     fee: "$75–$200 / mo",
     processing: "~2.9% + $0.30",
-    monthlyTotal: "$365–$490",
-    yearlyTotal: "$4,380–$5,880",
+    monthlyTotal: "$655–$780",
+    yearlyTotal: "$7,860–$9,360",
   },
 ];
 
@@ -69,7 +69,7 @@ export default function CostComparison() {
 
         <FadeUp delay={0.1} className="text-center mb-6">
           <p className="text-xs uppercase tracking-widest text-mist">
-            Based on $10,000 / mo in member card payments
+            Based on $20,000 / mo in member card payments
           </p>
         </FadeUp>
 
@@ -116,14 +116,14 @@ export default function CostComparison() {
         <FadeUp delay={0.15} className="mt-10 text-center">
           <p className="text-mist leading-relaxed max-w-2xl mx-auto">
             That&rsquo;s up to{" "}
-            <span className="text-ink font-semibold">$5,988 a year</span>{" "}
+            <span className="text-ink font-semibold">$11,976 a year</span>{" "}
             leaving your account with the competition — before you count
             your own time. WheelPay: <span className="text-green font-semibold">$0</span>.
           </p>
         </FadeUp>
 
         <p className="mt-8 text-xs text-mist/70 text-center max-w-2xl mx-auto leading-relaxed">
-          *Monthly/yearly totals are illustrative, based on $10,000/mo in
+          *Monthly/yearly totals are illustrative, based on $20,000/mo in
           member card payments run through each platform&rsquo;s lowest
           published processing rate, and exclude small per-transaction fixed
           fees, which vary by transaction count. Pricing reflects each
