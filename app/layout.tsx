@@ -9,7 +9,7 @@ const organizationJsonLd = {
   name: "WheelPay",
   url: "https://wheelpay.com",
   description:
-    "WheelPay is a payment processing platform built for gym owners — zero monthly fees, zero setup costs, and processing fees passed to the member, not the business.",
+    "WheelPay is an all-in-one platform built for gym owners — zero-fee payment processing, custom affiliate programs, AI-powered analytics, and gym management tools in one place.",
   email: "info@wheelpay.com",
   telephone: "+1-919-289-2025",
   areaServed: { "@type": "Country", name: "United States" },
@@ -19,12 +19,13 @@ const organizationJsonLd = {
     "Gym Management Software",
     "CrossFit Affiliate Software",
     "Retail Point of Sale",
+    "AI-Powered Analytics",
   ],
 };
 
-const title = "WheelPay — Payment Processing for Fitness Businesses";
+const title = "WheelPay — Payments & Growth Tools for Fitness Businesses";
 const description =
-  "WheelPay is the payment platform built by gym owners, for gym owners. Zero monthly fees, zero setup costs — processing fees go to the member, not you.";
+  "WheelPay is the all-in-one platform built by gym owners, for gym owners — zero-fee payment processing, next-day funding, and AI-powered tools to grow your business.";
 
 export const metadata: Metadata = {
   title,

@@ -66,9 +66,9 @@ export default function AppShowcase() {
     <section id="app" className="py-28 px-6 bg-navy-deep overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <FadeUp className="mb-12 text-center">
-          <p className="text-xs uppercase tracking-[0.4em] text-mist mb-4">The WheelPay App</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-green mb-4">The WheelPay App</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-ink leading-tight text-balance">
-            One App. Every Role.
+            One App. <span className="text-green">Every Role.</span>
           </h2>
         </FadeUp>
 

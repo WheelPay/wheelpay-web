@@ -6,7 +6,7 @@ const steps = [
   { number: "01", title: "Join Free", description: "Sign up at no cost. No credit card required to get started." },
   { number: "02", title: "Set Up in Minutes", description: "A 10–20 minute merchant account application is all it takes." },
   { number: "03", title: "Go Live", description: "Members use the app. You run everything from the admin portal." },
-  { number: "04", title: "Get Paid", description: "Funds are deposited to your account within 24–48 hours." },
+  { number: "04", title: "Get Paid", description: "Funds are deposited to your account as soon as the next business day." },
 ];
 
 export default function HowItWorks() {
@@ -14,9 +14,9 @@ export default function HowItWorks() {
     <section id="how-it-works" className="py-28 px-6 bg-navy">
       <div className="max-w-7xl mx-auto">
         <FadeUp className="mb-20">
-          <p className="text-xs uppercase tracking-[0.4em] text-mist mb-4">How It Works</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-green mb-4">How It Works</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-ink leading-tight max-w-lg text-balance">
-            Live in Days, Not Weeks
+            Live in Days, <span className="text-green">Not Weeks</span>
           </h2>
         </FadeUp>
 

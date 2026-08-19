@@ -80,14 +80,25 @@ export default function CostComparison() {
     <section id="compare" className="py-28 px-6 bg-navy-deep">
       <div className="max-w-5xl mx-auto">
         <FadeUp className="text-center mb-14">
-          <p className="text-xs uppercase tracking-[0.4em] text-mist mb-4">Cost Comparison</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-green mb-4">Cost Comparison</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-ink leading-tight text-balance mb-5">
-            Why Pay to Get Paid?
+            <span className="text-green">Why Pay</span> to Get Paid?
           </h2>
           <p className="max-w-xl mx-auto text-lg text-mist leading-relaxed">
             Every other gym platform charges a monthly fee, a processing fee,
-            or both — straight out of your account. WheelPay charges the
-            owner nothing. Ever.
+            or both — straight out of your account.
+            <br />
+            WheelPay charges the Owner nothing.
+            <br />
+            Ever.
+          </p>
+          <p className="max-w-xl mx-auto text-lg text-mist leading-relaxed mt-3">
+            Depending on gym size, that&rsquo;s
+            <br />
+            <span className="text-green font-semibold">
+              $15,000–$50,000 in real savings every year
+            </span>
+            .
           </p>
         </FadeUp>
 
@@ -169,7 +180,10 @@ export default function CostComparison() {
           streamfit.com/streamfit-pricing; Zen Planner&rsquo;s fee is
           third-party-reported (its own pricing page could not be verified
           directly). WheelPay&rsquo;s $0 owner-side processing reflects its
-          flat, member-paid transaction fee structure.
+          flat, member-paid transaction fee structure. The $15,000–$50,000
+          real-savings range scales this same comparison (WheelPay vs.
+          PushPress Free, the highest-fee platform above) across roughly
+          $25,000–$85,000/mo in card payments, covering small to large gyms.
         </p>
       </div>
     </section>

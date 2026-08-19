@@ -6,9 +6,9 @@ const benefits = [
   { title: "Zero Fee Processing", description: "Processing fees are passed to the member, not you. Keep 100% of what you earn." },
   { title: "Automated Tax Calculations", description: "Accurate tax handling built into every transaction — no manual tracking needed." },
   { title: "PCI-Compliant Security", description: "Every transaction processed to the highest security standard in the industry." },
-  { title: "Flexible Profit Sharing", description: "Performance-based revenue sharing available for gym owners and franchise HQs." },
+  { title: "Custom Affiliate Program", description: "Pass 100% of processing fees to your members, or choose your own rates with custom processing — you decide what your members pay in affiliate fees." },
   { title: "Gym-Branded Experience", description: "Your members see your brand — custom checkout and onboarding, start to finish." },
-  { title: "Comprehensive Reporting", description: "Transparent analytics and reporting, so you always know where your business stands." },
+  { title: "AI-Powered Insights", description: "AI tools surface data analytics and manage lead follow-up for new member signups, so nothing falls through the cracks." },
 ];
 
 export default function Benefits() {
@@ -16,9 +16,9 @@ export default function Benefits() {
     <section id="benefits" className="py-28 px-6 bg-navy-deep">
       <div className="max-w-7xl mx-auto">
         <FadeUp className="mb-16">
-          <p className="text-xs uppercase tracking-[0.4em] text-mist mb-4">Platform Benefits</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-green mb-4">Platform Benefits</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-ink leading-tight max-w-xl text-balance">
-            Everything a Modern Gym Needs
+            <span className="text-green">Everything</span> a <span className="text-green">Modern Gym</span> Needs
           </h2>
         </FadeUp>
 

@@ -5,7 +5,7 @@ import { FadeUp } from "./motion";
 const stats = [
   { value: "$0", label: "Monthly Platform Fee" },
   { value: "$0", label: "Setup or Training Cost" },
-  { value: "24–48", label: "Hours to Receive Payments" },
+  { value: "Next-Day", label: "Funding Available" },
 ];
 
 export default function Stats() {

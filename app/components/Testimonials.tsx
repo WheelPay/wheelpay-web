@@ -28,9 +28,9 @@ export default function Testimonials() {
     <section id="reviews" className="py-28 px-6 bg-navy-deep">
       <div className="max-w-7xl mx-auto">
         <FadeUp className="mb-16">
-          <p className="text-xs uppercase tracking-[0.4em] text-mist mb-4">From Gym Owners</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-green mb-4">From Gym Owners</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-ink leading-tight max-w-xl text-balance">
-            Real Savings, Real Owners
+            <span className="text-green">Real Savings</span>, Real Owners
           </h2>
         </FadeUp>
 

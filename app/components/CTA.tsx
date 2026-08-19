@@ -8,7 +8,7 @@ export default function CTA() {
     <section id="contact" className="py-28 px-6 bg-navy">
       <FadeUp className="max-w-3xl mx-auto text-center">
         <h2 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6 text-balance">
-          Ready to Pay Better and Do Better?
+          Ready to Pay Better and <span className="text-green">Do Better?</span>
         </h2>
         <p className="text-lg text-mist leading-relaxed mb-10 max-w-xl mx-auto">
           Book a demo and see exactly how much WheelPay can put back in your

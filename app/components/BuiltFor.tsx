@@ -14,9 +14,9 @@ export default function BuiltFor() {
     <section id="built-for" className="py-28 px-6 bg-navy">
       <div className="max-w-7xl mx-auto">
         <FadeUp className="mb-16 text-center">
-          <p className="text-xs uppercase tracking-[0.4em] text-mist mb-4">Built For</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-green mb-4">Built For</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-ink leading-tight text-balance">
-            Every Corner of the Industry
+            <span className="text-green">Every Corner</span> of the Industry
           </h2>
         </FadeUp>
 
