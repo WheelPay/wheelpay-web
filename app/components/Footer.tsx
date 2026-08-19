@@ -57,8 +57,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/8 text-xs text-center text-mist">
-          &copy; {new Date().getFullYear()} WheelPay. All rights reserved.
+        <div className="mt-12 pt-8 border-t border-white/8 text-xs text-center text-mist flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+          <span>&copy; {new Date().getFullYear()} WheelPay. All rights reserved.</span>
+          <span className="hidden sm:inline text-white/20">|</span>
+          <Link href="/termsandconditions" className="hover:text-ink transition-colors">
+            Terms &amp; Conditions
+          </Link>
+          <span className="hidden sm:inline text-white/20">|</span>
+          <Link href="/accountdeletion" className="hover:text-ink transition-colors">
+            Delete Your Account
+          </Link>
         </div>
       </div>
     </footer>
