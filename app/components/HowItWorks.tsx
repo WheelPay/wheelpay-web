@@ -16,7 +16,7 @@ export default function HowItWorks() {
         <FadeUp className="mb-20">
           <p className="text-xs uppercase tracking-[0.4em] text-green mb-4">How It Works</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-ink leading-tight max-w-lg text-balance">
-            Live in Days, <span className="text-green">Not Weeks</span>
+            <span className="text-green">Live in Days</span>, Not Weeks
           </h2>
         </FadeUp>
 

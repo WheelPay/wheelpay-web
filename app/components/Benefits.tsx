@@ -3,11 +3,11 @@
 import { FadeUp, Stagger, StaggerItem } from "./motion";
 
 const benefits = [
-  { title: "Zero Fee Processing", description: "Processing fees are passed to the member, not you. Keep 100% of what you earn." },
-  { title: "Automated Tax Calculations", description: "Accurate tax handling built into every transaction — no manual tracking needed." },
-  { title: "PCI-Compliant Security", description: "Every transaction processed to the highest security standard in the industry." },
+  { title: "Zero Fee Processing", description: "Processing fees can be passed on to the member instead of baked into higher rates — which never fully covers it anyway, since you'd owe the fee on that extra amount too. It's a separate, transparent line item, and your pricing stays exactly what it is." },
+  { title: "Automated Tax Calculations", description: "Accurate tax handling built into every transaction — no manual tracking needed. You input your tax rate for your location, so there's never a doubt it's being applied correctly." },
+  { title: "PCI-Compliant Security", description: "Every transaction processed to the highest security standard in the industry. Card data is tokenized and never stored on your systems, so a breach on your end simply isn't a liability you carry." },
   { title: "Custom Affiliate Program", description: "Pass 100% of processing fees to your members, or choose your own rates with custom processing — you decide what your members pay in affiliate fees." },
-  { title: "Gym-Branded Experience", description: "Your members see your brand — custom checkout and onboarding, start to finish." },
+  { title: "Gym-Branded Experience", description: "Your members see your brand — custom checkout and onboarding, start to finish. WheelPay stays invisible in the background; nobody has to know a third party is even involved." },
   { title: "AI-Powered Insights", description: "AI tools surface data analytics and manage lead follow-up for new member signups, so nothing falls through the cracks." },
 ];
 
