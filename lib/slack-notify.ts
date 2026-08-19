@@ -15,7 +15,7 @@ export async function notifyBooking(params: {
   });
 
   const text = [
-    `📅 New booking via aheadmedia.net/book`,
+    `📅 New booking via wheelpay-web.vercel.app/book`,
     `*${params.partnerName}* (${params.partnerEmail}) booked *${when}* (Eastern)`,
     params.notes ? `> ${params.notes}` : null,
     params.meetLink ? `Meet: ${params.meetLink}` : null,

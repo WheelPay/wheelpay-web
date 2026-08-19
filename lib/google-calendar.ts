@@ -8,21 +8,26 @@ const WORK_START_HOUR = 9;
 const WORK_END_HOUR = 17;
 const LOOKAHEAD_DAYS = 21;
 
-// The hub account — new bookings land on this calendar. It already has
-// viewer access to the other four (shared to it directly in Google Calendar),
-// so freebusy queries against all five work off this one OAuth grant.
-const HUB_CALENDAR_ID = "nathan@wheelpay.com";
-const CALENDAR_IDS = [
-  HUB_CALENDAR_ID,
-  "nathan@aheadmedia.net",
-  "nathan@besthouroftheirday.com",
-  "hopeinyhwh@gmail.com",
-  "nandc2019@gmail.com",
-];
+// BOOKING_CALENDAR_IDS is a comma-separated list; the first entry is the hub
+// account (new bookings land there, and it's the domain-wide-delegation
+// subject). The rest are cross-referenced for availability only. Read from
+// env rather than hardcoded so the public wheelpay-web repo doesn't carry
+// real email addresses in source.
+function getCalendarIds(): string[] {
+  const raw = process.env.BOOKING_CALENDAR_IDS;
+  if (!raw) {
+    throw new Error("Missing BOOKING_CALENDAR_IDS");
+  }
+  return raw.split(",").map((id) => id.trim()).filter(Boolean);
+}
+
+function getHubCalendarId(): string {
+  return getCalendarIds()[0];
+}
 
 // Authenticates as the "booking-calendar" service account, impersonating
-// nathan@wheelpay.com via Workspace domain-wide delegation. No user-consent
-// refresh token involved, so there's no periodic expiry to renew.
+// the hub calendar's account via Workspace domain-wide delegation. No
+// user-consent refresh token involved, so there's no periodic expiry to renew.
 function getAuthClient() {
   const rawKey = process.env.GOOGLE_SERVICE_ACCOUNT_KEY;
   if (!rawKey) {
@@ -37,7 +42,7 @@ function getAuthClient() {
       "https://www.googleapis.com/auth/calendar.events",
       "https://www.googleapis.com/auth/calendar.readonly",
     ],
-    subject: "nathan@wheelpay.com",
+    subject: getHubCalendarId(),
   });
 }
 
@@ -76,6 +81,7 @@ function mergeBusyIntervals(rawBusy: { start?: string | null; end?: string | nul
 
 export async function getAvailableSlots(): Promise<Slot[]> {
   const calendar = getCalendarApi();
+  const calendarIds = getCalendarIds();
   const now = DateTime.now().setZone(TIME_ZONE);
   const timeMin = now.toUTC().toISO();
   const timeMax = now.plus({ days: LOOKAHEAD_DAYS }).toUTC().toISO();
@@ -84,11 +90,11 @@ export async function getAvailableSlots(): Promise<Slot[]> {
     requestBody: {
       timeMin: timeMin!,
       timeMax: timeMax!,
-      items: CALENDAR_IDS.map((id) => ({ id })),
+      items: calendarIds.map((id) => ({ id })),
     },
   });
 
-  const allBusy = CALENDAR_IDS.flatMap((id) => data.calendars?.[id]?.busy ?? []);
+  const allBusy = calendarIds.flatMap((id) => data.calendars?.[id]?.busy ?? []);
   const busyIntervals = mergeBusyIntervals(allBusy);
 
   const slots: Slot[] = [];
@@ -124,7 +130,7 @@ export async function createBooking(params: {
   const calendar = getCalendarApi();
 
   const { data } = await calendar.events.insert({
-    calendarId: HUB_CALENDAR_ID,
+    calendarId: getHubCalendarId(),
     sendUpdates: "all",
     conferenceDataVersion: 1,
     requestBody: {
