@@ -25,7 +25,7 @@ const organizationJsonLd = {
 
 const title = "WheelPay — Payments & Growth Tools for Fitness Businesses";
 const description =
-  "WheelPay is the all-in-one platform built by gym owners, for gym owners — zero-fee payment processing, next-day funding, and AI-powered tools to grow your business.";
+  "WheelPay is the all-in-one platform built by gym owners, for gym owners — zero-fee processing, next-day funding, and AI-powered tools to grow your business.";
 
 export const metadata: Metadata = {
   title,
