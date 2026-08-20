@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <div className="flex items-center gap-2.5 mb-3">
-              <Image src="/wheelpay-mark.svg" alt="" width={24} height={22} className="text-green" />
+              <Image src="/wheelpay-mark.svg" alt="" width={24} height={22} />
               <span className="text-xl font-bold text-ink tracking-tight">WheelPay</span>
             </div>
             <p className="text-sm leading-relaxed text-mist">

@@ -26,19 +26,14 @@ export default function Navigation() {
             alt=""
             width={28}
             height={26}
-            className="text-green"
             style={{
               height: "26px",
               width: "auto",
               filter: [
-                "drop-shadow(0.6px 0 0 #00DE72)",
-                "drop-shadow(-0.6px 0 0 #00DE72)",
-                "drop-shadow(0 0.6px 0 #00DE72)",
-                "drop-shadow(0 -0.6px 0 #00DE72)",
-                "drop-shadow(0.45px 0.45px 0 #00DE72)",
-                "drop-shadow(-0.45px 0.45px 0 #00DE72)",
-                "drop-shadow(0.45px -0.45px 0 #00DE72)",
-                "drop-shadow(-0.45px -0.45px 0 #00DE72)",
+                "drop-shadow(1px 0 0 #00DE72)",
+                "drop-shadow(-1px 0 0 #00DE72)",
+                "drop-shadow(0 1px 0 #00DE72)",
+                "drop-shadow(0 -1px 0 #00DE72)",
               ].join(" "),
             }}
             priority
