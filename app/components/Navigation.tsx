@@ -26,16 +26,7 @@ export default function Navigation() {
             alt=""
             width={28}
             height={26}
-            style={{
-              height: "26px",
-              width: "auto",
-              filter: [
-                "drop-shadow(1px 0 0 #00DE72)",
-                "drop-shadow(-1px 0 0 #00DE72)",
-                "drop-shadow(0 1px 0 #00DE72)",
-                "drop-shadow(0 -1px 0 #00DE72)",
-              ].join(" "),
-            }}
+            style={{ height: "26px", width: "auto" }}
             priority
           />
           <span className="text-lg font-bold text-ink tracking-tight">WheelPay</span>
